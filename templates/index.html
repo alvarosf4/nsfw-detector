@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<link rel="manifest" href="/static/manifest.json">
 <meta name="theme-color" content="#38bdf8">
 <html>
 <head>
@@ -88,14 +87,6 @@
 
     </style>
 </head>
-
-<script>
-if ("serviceWorker" in navigator) {
-    navigator.serviceWorker.register("/static/sw.js")
-    .then(() => console.log("SW registrado"))
-    .catch(err => console.log("SW error:", err));
-}
-</script>
 
 <body>
 
